@@ -165,6 +165,30 @@ footer p{
     
 }
 
+@media (min-width: 400px){
+    nav ul li {
+        margin-left:0.5em; 
+        margin-right:0.5em; 
+    }
+    
+    nav ul li a {
+        font-size: 0.6rem; 
+    }
+}
+
+@media(max-width:445px){
+    nav ul li a {
+        font-size: 0.4rem; 
+        padding: 5px; 
+    }
+
+    nav ul li {
+        margin: 0 0.25em;
+    }
+
+    
+}
+
 @media (max-width: 414px) {
     .first-post {
         background-size: cover;
@@ -189,6 +213,7 @@ footer p{
         display: flex;
         justify-content: center;
     }
+    
     
 }
 
