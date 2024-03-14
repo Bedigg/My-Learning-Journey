@@ -33,7 +33,7 @@ ul{
 
 ul li{
     list-style: none;
-    margin-left: 1em;
+    margin-left: 0.25em;
 }
 
 ul li a:hover{
@@ -41,6 +41,7 @@ ul li a:hover{
 }
 
 ul li a{
+    font-size:0.75rem;
 text-decoration: none;
 color: black;
 }
