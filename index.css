@@ -21,6 +21,9 @@ font-weight: 600;
 font-size:0.75rem;
 align-items: center;
 }
+.fa-solid{
+    margin-top:0.25em;
+}
 
 nav img{
     min-width: 80%;
