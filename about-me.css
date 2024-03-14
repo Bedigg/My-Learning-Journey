@@ -162,6 +162,26 @@ footer p{
     margin-top: 0;
 }
 
+@media (min-width: 400px){
+
+    
+    nav ul li a {
+        font-size: 0.6rem; 
+    }
+}
+
+@media(max-width:445px){
+    nav ul li a {
+        font-size: 0.4rem; 
+        padding: 5px; 
+    }
+
+    nav ul li {
+        margin: 0 0.25em;
+    }
+
+    
+}
 
 @media(min-width:479px){
     .posts{
