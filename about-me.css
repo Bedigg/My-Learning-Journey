@@ -40,7 +40,7 @@ ul{
 
 ul li{
     list-style: none;
-    margin-left: 0.25em;
+    margin-left: 0.75em;
 }
 
 ul li a:hover{
@@ -50,7 +50,6 @@ ul li a:hover{
 ul li a{
 text-decoration: none;
 color: #151515;
-    font-size:0.75rem;
 }
 
 .profile-img{
@@ -263,6 +262,10 @@ margin-bottom: 1.5em;
         grid-template-columns: repeat(3, 1fr)  ;
     }
     
+    nav ul li a{
+        font-size: 0.8rem;
+    }
+
     .in-first-section h3{
         font-size: 1.2rem;
     }
