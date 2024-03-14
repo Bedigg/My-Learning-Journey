@@ -22,7 +22,7 @@ align-items: center;
 }
 
 nav img{
-    min-width: 60%;
+    min-width: 80%;
     height: auto;
 }
 
@@ -33,7 +33,7 @@ ul{
 
 ul li{
     list-style: none;
-    margin-left: 0.25em;
+    margin-left: 0.75em;
 }
 
 ul li a:hover{
@@ -41,7 +41,6 @@ ul li a:hover{
 }
 
 ul li a{
-    font-size:0.75rem;
 text-decoration: none;
 color: black;
 }
@@ -89,13 +88,10 @@ img {
     margin: 0 auto;
     background-image: url('images/article-image-hero.png');
     background-size: cover;
-    object-fit: cover;
-    height: 500px;
     color: white;
     display: flex;
     flex-direction: column;
-    
-    
+    height: 50vh;
 }
 
 .first-date, .first-h2, .first-par{
@@ -127,7 +123,6 @@ img {
     font-weight: bold;
     background: #FFF;
     width: 100%;
-    color:#505050;
 }
 
 .hidden{
@@ -157,6 +152,14 @@ footer p{
     margin-top: 0;
 }
 
+@media (max-width: 414px) {
+    .first-post {
+        background-size: cover;
+        background-position: center;
+        height: 293px;
+    }
+}
+
 @media(min-width:479px){
     
     .view-more{
@@ -167,6 +170,7 @@ footer p{
         display: grid;
         
     }
+
     
     .view-less{
         display: flex;
