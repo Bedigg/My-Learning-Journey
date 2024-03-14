@@ -1,0 +1,273 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+margin: 0 auto;
+min-width: 414px;
+color: #151515;
+}
+
+
+header{
+    font-size: 1.5rem;
+    padding: 0 1.5em;
+    
+}
+
+.fa-solid{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between; 
+    margin: 0 auto;
+font-weight: 600;
+font-size:0.75rem;
+align-items: center;
+}
+
+nav img{
+    min-width: 80%;
+    height: auto;
+    
+}
+
+ul{
+    display: flex;
+
+}
+
+ul li{
+    list-style: none;
+    margin-left: 0.75em;
+}
+
+ul li a:hover{
+    color: #505050;
+}
+
+ul li a{
+text-decoration: none;
+color: #151515;
+}
+
+.profile-img{
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+}
+
+
+.profile h3{
+    font-size: 4.2rem;
+}
+
+.first-section{
+    margin-bottom: 3em;
+}
+
+.first-section h3{
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 1.5em;
+}
+
+.first-section p{
+    margin-bottom: 1.5em;
+}
+
+.in-first-section{
+    margin-top: 0;
+}
+
+
+.container, .first-section {
+    width: 90%;
+    /*max-width: 60em;*/
+    object-fit: cover;
+    padding-top: 1.5em;
+    margin: 0 auto;
+}
+
+.recent-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.recent{
+   text-align: center;
+   font-weight: bold;
+   font-size: 1rem;
+}
+
+
+.posts {
+    display: grid;
+    gap: 1em;  
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))
+}
+
+article {
+    margin-bottom: 1em;
+}
+
+.article-info {
+    text-transform: uppercase;
+}
+
+.article-img {
+    margin-bottom: 1em;
+    border-radius: 0.1875em;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.article-title {
+    font-size: 1.5rem;
+    margin: 0.5em 0 0.35em 0;
+}
+
+.article-preview {
+    margin-top: 0;
+    color: #505050;
+}
+
+footer{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    justify-content: center;
+    background: #202020;
+    margin: 0 auto;
+    text-align: center;
+    height: 6.56em;
+    font-size: 0.75rem;
+    width: 100%;
+}
+
+footer h3{
+    color: #ECECEC;
+    margin-bottom: 0; 
+    font-weight: bold;
+}
+
+footer p{
+    color: #D7D7D7;
+    margin-top: 0;
+}
+
+
+@media(min-width:479px){
+    .posts{
+      grid-template-columns: repeat(1, 1fr)  
+    }
+}
+
+@media(min-width:767px){
+    
+    nav{
+        font-size: 0.8rem;
+    }
+    
+    
+    nav img{
+        width: 100%;
+        margin-left: 1em;
+    }
+    
+    .profile{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-areas: "image header"
+                             "image paragraph"
+                             ;
+       gap:1.25em;
+       align-items: start;
+    }
+    
+    .profile-img {
+        grid-area: image; 
+    }
+
+    .profile-header {
+        grid-area: header; 
+        margin: 0; 
+        padding-top: 0.5em;
+    }
+
+    .profile-par {
+        grid-area: paragraph; 
+        margin-top: 0;
+    }
+    
+    .profile-header, .profile-par{
+        justify-content: center;
+    }
+    
+    .in-first-section {
+        width: 75vw;
+        margin-left: auto;
+        align-items: end;
+    }
+    .in-first-end{
+    display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    
+    .profile{
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .in-first-section h3{
+        font-size: 1.2rem;
+        margin-bottom: 1.5em;
+    }
+    
+    .in-first-section p{
+font-size: 1.1rem;
+margin-bottom: 1.5em;
+    }
+    
+    .posts{
+      grid-template-columns: repeat(3, 1fr)  ;
+    }
+    
+    nav ul li {
+        margin: 0.5em 1em; 
+    }
+    
+    ul{
+    margin-right: 1em;
+    }
+    
+    .container, .first-section, .recent-align {
+        padding: 0.5em;
+        width: 85vw; 
+    }
+  
+}
+@media(min-width:1023px){
+    .posts{
+        gap:3em;
+        grid-template-columns: repeat(3, 1fr)  ;
+    }
+    
+    .in-first-section h3{
+        font-size: 1.2rem;
+    }
+    
+    .in-first-section p{
+font-size: 1.2rem;
+    }
+        
+}
